@@ -1,0 +1,25 @@
+### Headers settings
+company: Pavel Samsonov
+
+### Xcode project settings
+project_name: СityOnMap
+xcodeproj_path: СityOnMap.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: СityOnMap
+
+# The file path for new modules
+project_file_path: СityOnMap/Classes/Modules
+
+# The Xcode group path to new modules
+project_group_path: СityOnMap/Classes/Modules
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+catalogs:
+- 'https://github.com/rambler-digital-solutions/generamba-catalog'
+templates:
+- {name: swifty_viper}

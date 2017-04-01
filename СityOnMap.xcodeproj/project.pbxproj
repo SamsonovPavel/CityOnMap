@@ -7,17 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203A7B623C98D2D9E97BDB88 /* CityCollectionVCInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA37C6752DA706F84B2247A0 /* CityCollectionVCInteractorOutput.swift */; };
+		44E405732959725D5C653C2C /* CityCollectionVCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6F285FF8DBE17E3C4165C /* CityCollectionVCConfigurator.swift */; };
+		56BB7DFE39FA9A65882CB61C /* CityCollectionVCViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2FACAE0152869D88E8AF2 /* CityCollectionVCViewInput.swift */; };
+		5DCD110849E47752177DEAA3 /* CityCollectionVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED8B37398E6E5033B3BEA /* CityCollectionVCViewController.swift */; };
+		721CB0ADCFF20F78E0A7EF8A /* CityCollectionVCViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA50788B140891514D193A /* CityCollectionVCViewOutput.swift */; };
 		840D8AD61E8F7CDE00D2BA4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D8AD51E8F7CDE00D2BA4F /* AppDelegate.swift */; };
 		840D8AD81E8F7CDE00D2BA4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D8AD71E8F7CDE00D2BA4F /* ViewController.swift */; };
 		840D8ADB1E8F7CDE00D2BA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840D8AD91E8F7CDE00D2BA4F /* Main.storyboard */; };
 		840D8ADD1E8F7CDE00D2BA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840D8ADC1E8F7CDE00D2BA4F /* Assets.xcassets */; };
 		840D8AE01E8F7CDE00D2BA4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840D8ADE1E8F7CDE00D2BA4F /* LaunchScreen.storyboard */; };
+		908659CEB2B2A9E40BCABAC3 /* CityCollectionVCRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C8EB7599AEDEE1C5F7219 /* CityCollectionVCRouterInput.swift */; };
+		9599543E16AE824DA890C104 /* CityCollectionVCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D1B2A97EC18D85548EB82C /* CityCollectionVCInteractor.swift */; };
+		C17064F0A4157BE599907520 /* CityCollectionVCModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB1DE141F0C57F5FC82997 /* CityCollectionVCModuleInput.swift */; };
+		C387CC6DA3E2A43BACB71696 /* CityCollectionVCInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B0C8B154822F064F549BA1 /* CityCollectionVCInitializer.swift */; };
+		CD1E57DF2C53FFBE2FEFFB80 /* CityCollectionVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6CA0C3EDFFFEB8A4D510DE /* CityCollectionVCRouter.swift */; };
 		CDE5E4FD84ACABE4F11F9D51 /* Pods__ityOnMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF5F57E6C753A6308EF3323 /* Pods__ityOnMap.framework */; };
+		DC915C0F1B777383FA75A41E /* CityCollectionVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149E25EE9D26294442F5D46 /* CityCollectionVCPresenter.swift */; };
+		F918754751881F76CA85838B /* CityCollectionVCInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65281741CDF94D0F7D7DD087 /* CityCollectionVCInteractorInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09B0C8B154822F064F549BA1 /* CityCollectionVCInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCInitializer.swift; sourceTree = "<group>"; };
+		0C6CA0C3EDFFFEB8A4D510DE /* CityCollectionVCRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCRouter.swift; sourceTree = "<group>"; };
 		0D56FA2C334F4ABB0FE8AC81 /* Pods-СityOnMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-СityOnMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-СityOnMap/Pods-СityOnMap.debug.xcconfig"; sourceTree = "<group>"; };
+		0EB6F285FF8DBE17E3C4165C /* CityCollectionVCConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCConfigurator.swift; sourceTree = "<group>"; };
+		2149E25EE9D26294442F5D46 /* CityCollectionVCPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCPresenter.swift; sourceTree = "<group>"; };
+		25D1B2A97EC18D85548EB82C /* CityCollectionVCInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCInteractor.swift; sourceTree = "<group>"; };
+		2DEA50788B140891514D193A /* CityCollectionVCViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCViewOutput.swift; sourceTree = "<group>"; };
 		3FF5F57E6C753A6308EF3323 /* Pods__ityOnMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__ityOnMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		495ED8B37398E6E5033B3BEA /* CityCollectionVCViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCViewController.swift; sourceTree = "<group>"; };
+		65281741CDF94D0F7D7DD087 /* CityCollectionVCInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCInteractorInput.swift; sourceTree = "<group>"; };
 		840D8AD21E8F7CDE00D2BA4F /* СityOnMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "СityOnMap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D8AD51E8F7CDE00D2BA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840D8AD71E8F7CDE00D2BA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +45,11 @@
 		840D8ADC1E8F7CDE00D2BA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840D8ADF1E8F7CDE00D2BA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840D8AE11E8F7CDE00D2BA4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90BB1DE141F0C57F5FC82997 /* CityCollectionVCModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCModuleInput.swift; sourceTree = "<group>"; };
+		AA37C6752DA706F84B2247A0 /* CityCollectionVCInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCInteractorOutput.swift; sourceTree = "<group>"; };
+		B1B2FACAE0152869D88E8AF2 /* CityCollectionVCViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCViewInput.swift; sourceTree = "<group>"; };
 		D1AAEBCF0448BA248F7C0A54 /* Pods-СityOnMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-СityOnMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-СityOnMap/Pods-СityOnMap.release.xcconfig"; sourceTree = "<group>"; };
+		F33C8EB7599AEDEE1C5F7219 /* CityCollectionVCRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityCollectionVCRouterInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +70,54 @@
 				3FF5F57E6C753A6308EF3323 /* Pods__ityOnMap.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BD9B2490606FF367CBD9064 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0EB6F285FF8DBE17E3C4165C /* CityCollectionVCConfigurator.swift */,
+				09B0C8B154822F064F549BA1 /* CityCollectionVCInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		2AF4C05E6E3681444A8AF161 /* CityCollectionVC */ = {
+			isa = PBXGroup;
+			children = (
+				7849169D0B95BAFC32685765 /* View */,
+				620524E452CF8F28C4C695A2 /* Presenter */,
+				EE8347F8948EE36E237E53F2 /* Interactor */,
+				E04FA494EE5A8641AB1BE15B /* Router */,
+				1BD9B2490606FF367CBD9064 /* Configurator */,
+			);
+			path = CityCollectionVC;
+			sourceTree = "<group>";
+		};
+		4BB8DE06906021311072F4C2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2AF4C05E6E3681444A8AF161 /* CityCollectionVC */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		620524E452CF8F28C4C695A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				90BB1DE141F0C57F5FC82997 /* CityCollectionVCModuleInput.swift */,
+				2149E25EE9D26294442F5D46 /* CityCollectionVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7849169D0B95BAFC32685765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1B2FACAE0152869D88E8AF2 /* CityCollectionVCViewInput.swift */,
+				2DEA50788B140891514D193A /* CityCollectionVCViewOutput.swift */,
+				495ED8B37398E6E5033B3BEA /* CityCollectionVCViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		840D8AC91E8F7CDD00D2BA4F = {
@@ -69,19 +141,12 @@
 		840D8AD41E8F7CDE00D2BA4F /* СityOnMap */ = {
 			isa = PBXGroup;
 			children = (
-				840D8AE71E8F87E600D2BA4F /* Classes */,
+				840D8AD51E8F7CDE00D2BA4F /* AppDelegate.swift */,
+				840D8AD71E8F7CDE00D2BA4F /* ViewController.swift */,
+				C995CEE19F6E5C4B95060DC3 /* Classes */,
 				840D8AE81E8F880300D2BA4F /* Resource */,
 			);
 			path = "СityOnMap";
-			sourceTree = "<group>";
-		};
-		840D8AE71E8F87E600D2BA4F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				840D8AD51E8F7CDE00D2BA4F /* AppDelegate.swift */,
-				840D8AD71E8F7CDE00D2BA4F /* ViewController.swift */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 		840D8AE81E8F880300D2BA4F /* Resource */ = {
@@ -118,6 +183,33 @@
 				D1AAEBCF0448BA248F7C0A54 /* Pods-СityOnMap.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C995CEE19F6E5C4B95060DC3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4BB8DE06906021311072F4C2 /* Modules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E04FA494EE5A8641AB1BE15B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F33C8EB7599AEDEE1C5F7219 /* CityCollectionVCRouterInput.swift */,
+				0C6CA0C3EDFFFEB8A4D510DE /* CityCollectionVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EE8347F8948EE36E237E53F2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				65281741CDF94D0F7D7DD087 /* CityCollectionVCInteractorInput.swift */,
+				AA37C6752DA706F84B2247A0 /* CityCollectionVCInteractorOutput.swift */,
+				25D1B2A97EC18D85548EB82C /* CityCollectionVCInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +338,18 @@
 			files = (
 				840D8AD81E8F7CDE00D2BA4F /* ViewController.swift in Sources */,
 				840D8AD61E8F7CDE00D2BA4F /* AppDelegate.swift in Sources */,
+				56BB7DFE39FA9A65882CB61C /* CityCollectionVCViewInput.swift in Sources */,
+				721CB0ADCFF20F78E0A7EF8A /* CityCollectionVCViewOutput.swift in Sources */,
+				5DCD110849E47752177DEAA3 /* CityCollectionVCViewController.swift in Sources */,
+				C17064F0A4157BE599907520 /* CityCollectionVCModuleInput.swift in Sources */,
+				DC915C0F1B777383FA75A41E /* CityCollectionVCPresenter.swift in Sources */,
+				F918754751881F76CA85838B /* CityCollectionVCInteractorInput.swift in Sources */,
+				203A7B623C98D2D9E97BDB88 /* CityCollectionVCInteractorOutput.swift in Sources */,
+				9599543E16AE824DA890C104 /* CityCollectionVCInteractor.swift in Sources */,
+				908659CEB2B2A9E40BCABAC3 /* CityCollectionVCRouterInput.swift in Sources */,
+				CD1E57DF2C53FFBE2FEFFB80 /* CityCollectionVCRouter.swift in Sources */,
+				44E405732959725D5C653C2C /* CityCollectionVCConfigurator.swift in Sources */,
+				C387CC6DA3E2A43BACB71696 /* CityCollectionVCInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
