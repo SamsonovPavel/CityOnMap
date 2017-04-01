@@ -1,0 +1,6 @@
+framework module Pods__ityOnMap {
+  umbrella header "Pods-СityOnMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

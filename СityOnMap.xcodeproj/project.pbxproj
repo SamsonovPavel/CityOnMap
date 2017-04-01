@@ -12,9 +12,12 @@
 		840D8ADB1E8F7CDE00D2BA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840D8AD91E8F7CDE00D2BA4F /* Main.storyboard */; };
 		840D8ADD1E8F7CDE00D2BA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840D8ADC1E8F7CDE00D2BA4F /* Assets.xcassets */; };
 		840D8AE01E8F7CDE00D2BA4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840D8ADE1E8F7CDE00D2BA4F /* LaunchScreen.storyboard */; };
+		CDE5E4FD84ACABE4F11F9D51 /* Pods__ityOnMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF5F57E6C753A6308EF3323 /* Pods__ityOnMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D56FA2C334F4ABB0FE8AC81 /* Pods-СityOnMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-СityOnMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-СityOnMap/Pods-СityOnMap.debug.xcconfig"; sourceTree = "<group>"; };
+		3FF5F57E6C753A6308EF3323 /* Pods__ityOnMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__ityOnMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D8AD21E8F7CDE00D2BA4F /* СityOnMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "СityOnMap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D8AD51E8F7CDE00D2BA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840D8AD71E8F7CDE00D2BA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		840D8ADC1E8F7CDE00D2BA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840D8ADF1E8F7CDE00D2BA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840D8AE11E8F7CDE00D2BA4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AAEBCF0448BA248F7C0A54 /* Pods-СityOnMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-СityOnMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-СityOnMap/Pods-СityOnMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE5E4FD84ACABE4F11F9D51 /* Pods__ityOnMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12F03C80C9F85826166031F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF5F57E6C753A6308EF3323 /* Pods__ityOnMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		840D8AC91E8F7CDD00D2BA4F = {
 			isa = PBXGroup;
 			children = (
 				840D8AD41E8F7CDE00D2BA4F /* СityOnMap */,
 				840D8AD31E8F7CDE00D2BA4F /* Products */,
+				C2AD0F86091F8BA13932141E /* Pods */,
+				12F03C80C9F85826166031F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +111,15 @@
 			name = Info;
 			sourceTree = "<group>";
 		};
+		C2AD0F86091F8BA13932141E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D56FA2C334F4ABB0FE8AC81 /* Pods-СityOnMap.debug.xcconfig */,
+				D1AAEBCF0448BA248F7C0A54 /* Pods-СityOnMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 840D8AE41E8F7CDE00D2BA4F /* Build configuration list for PBXNativeTarget "СityOnMap" */;
 			buildPhases = (
+				06D8936CD758D184F7FEDD2B /* [CP] Check Pods Manifest.lock */,
 				840D8ACE1E8F7CDE00D2BA4F /* Sources */,
 				840D8ACF1E8F7CDE00D2BA4F /* Frameworks */,
 				840D8AD01E8F7CDE00D2BA4F /* Resources */,
+				CA1F0926256583EE47648CA0 /* [CP] Embed Pods Frameworks */,
+				ED931DEE14C832D460EFA1C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +190,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06D8936CD758D184F7FEDD2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1F0926256583EE47648CA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-СityOnMap/Pods-СityOnMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED931DEE14C832D460EFA1C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-СityOnMap/Pods-СityOnMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		840D8ACE1E8F7CDE00D2BA4F /* Sources */ = {
@@ -289,7 +364,9 @@
 		};
 		840D8AE51E8F7CDE00D2BA4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D56FA2C334F4ABB0FE8AC81 /* Pods-СityOnMap.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R587H6JBHE;
 				INFOPLIST_FILE = "СityOnMap/Info.plist";
@@ -303,7 +380,9 @@
 		};
 		840D8AE61E8F7CDE00D2BA4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1AAEBCF0448BA248F7C0A54 /* Pods-СityOnMap.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R587H6JBHE;
 				INFOPLIST_FILE = "СityOnMap/Info.plist";
@@ -334,6 +413,7 @@
 				840D8AE61E8F7CDE00D2BA4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
