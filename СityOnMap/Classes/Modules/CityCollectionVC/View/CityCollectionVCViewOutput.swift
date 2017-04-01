@@ -8,5 +8,5 @@
 //
 
 protocol CityCollectionVCViewOutput {
-    func viewIsReady()
+    func getData()
 }

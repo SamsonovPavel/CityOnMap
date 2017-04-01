@@ -26,9 +26,9 @@ class CityCollectionVCModuleConfigurator {
         presenter.router = router
 
         let interactor = CityCollectionVCInteractor()
-        interactor.output = presenter
+        interactor.presenter = presenter
 
         presenter.interactor = interactor
-        viewController.output = presenter
+        viewController.presenter = presenter
     }
 }

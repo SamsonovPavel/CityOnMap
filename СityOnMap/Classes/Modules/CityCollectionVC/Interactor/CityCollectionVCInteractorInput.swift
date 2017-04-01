@@ -10,4 +10,5 @@
 import Foundation
 
 protocol CityCollectionVCInteractorInput {
+    func getRequest()
 }

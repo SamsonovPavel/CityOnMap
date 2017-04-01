@@ -7,14 +7,20 @@
 //  Copyright © 2017 Pavel Samsonov. All rights reserved.
 //
 
-class CityCollectionVCPresenter: CityCollectionVCModuleInput,
-                                 CityCollectionVCViewOutput,
-                                 CityCollectionVCInteractorOutput {
+class CityCollectionVCPresenter: CityCollectionVCModuleInput {
     weak var view: CityCollectionVCViewInput!
     var interactor: CityCollectionVCInteractorInput!
     var router: CityCollectionVCRouterInput!
+}
 
-    func viewIsReady() {
+extension CityCollectionVCPresenter: CityCollectionVCViewOutput {
+    func getData() {
+        interactor.getRequest()
+    }
+}
 
+extension CityCollectionVCPresenter: CityCollectionVCInteractorOutput {
+    func dataArray(cities: [City]?) {
+        view.reloadCollectionVC(cities: cities)
     }
 }

@@ -10,4 +10,5 @@
 import Foundation
 
 protocol CityCollectionVCInteractorOutput: class {
+    func dataArray(cities: [City]?)
 }

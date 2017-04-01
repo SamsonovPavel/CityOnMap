@@ -8,5 +8,5 @@
 //
 
 protocol CityCollectionVCViewInput: class {
-    func setupInitialState()
+    func reloadCollectionVC(cities: [City]?)
 }
