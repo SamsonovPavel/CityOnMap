@@ -14,7 +14,7 @@ private let cellReuseIdentifier = "Cell"
 class CityCollectionVCViewController: UICollectionViewController {
     let configurator = CityCollectionVCModuleConfigurator()
     var presenter: CityCollectionVCViewOutput!
-    var data: [City]?
+    var dataArray: [City]?
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -37,7 +37,9 @@ class CityCollectionVCViewController: UICollectionViewController {
 
 extension CityCollectionVCViewController: CityCollectionVCViewInput {
     func reloadCollectionVC(cities: [City]?) {
-        data = cities
+        if let data = cities {
+            dataArray = data
+        }
         collectionView?.reloadData()
     }
 }
@@ -45,12 +47,21 @@ extension CityCollectionVCViewController: CityCollectionVCViewInput {
 // MARK: UICollectionViewDataSource
 extension CityCollectionVCViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if let data = dataArray {
+            return data.count
+        }
+        return 0
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! CityCollectionCell
+        
+        if let city = dataArray?[indexPath.row] {
+            cell.textLabel.text = city.city_name
+            cell.imageView.image = imageFromId(id: city.city_id!)
+        }
+        
         return cell
     }
 }
@@ -58,6 +69,7 @@ extension CityCollectionVCViewController {
 // MARK: UICollectionViewDelegate
 extension CityCollectionVCViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
     }
 }
 

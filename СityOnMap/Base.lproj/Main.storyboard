@@ -13,7 +13,7 @@
         <scene sceneID="BUH-c8-vKX">
             <objects>
                 <collectionViewController id="YtI-ug-FhR" customClass="CityCollectionVCViewController" customModule="СityOnMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="SPA-IO-hLu">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="SPA-IO-hLu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,14 +42,32 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOf-3I-qS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-446" y="-234"/>
+            <point key="canvasLocation" x="-482" y="-234"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="S1M-OX-Tkk">
+            <objects>
+                <viewController id="Nyt-sr-VLq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="alr-EA-keK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xw7-AR-IZD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dCW-bW-fgB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOI-f4-Qyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="-234"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D5G-HJ-R67">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jsV-Yt-wj9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w3Z-qs-9mY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="w3Z-qs-9mY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -60,7 +78,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYJ-jx-OoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-968" y="-233"/>
+            <point key="canvasLocation" x="-1257" y="-234"/>
         </scene>
     </scenes>
 </document>
