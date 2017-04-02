@@ -127,6 +127,8 @@ extension CityCollectionVCViewController : UICollectionViewDelegateFlowLayout {
     }
 }
 
+
+// MARK: Notification
 extension CityCollectionVCViewController {
     func notification() {
         NotificationCenter.default.addObserver(self,
