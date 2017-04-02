@@ -22,12 +22,3 @@ class CityCollectionCell: UICollectionViewCell {
     }
 }
 
-//extension CityCollectionCell {
-//    func setLayerParameters(imageURL: String) -> Void {
-////        self.imageView.kf.setImage(with: URL(string: imageURL))
-//        self.imageView.layer.borderColor   = UIColor.darkGray.cgColor
-//        self.imageView.layer.borderWidth   = 1.0
-//        self.imageView.layer.cornerRadius  = self.imageView.bounds.width / 2.0
-//        self.imageView.layer.masksToBounds = true
-//    }
-//}

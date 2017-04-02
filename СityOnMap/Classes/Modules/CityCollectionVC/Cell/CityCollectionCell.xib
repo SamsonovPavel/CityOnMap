@@ -46,7 +46,7 @@
                 <outlet property="imageView" destination="0Ub-9q-jf6" id="FJa-Hk-ZaH"/>
                 <outlet property="textLabel" destination="fjs-xZ-G4r" id="hqF-dz-Q9z"/>
             </connections>
-            <point key="canvasLocation" x="-41" y="3"/>
+            <point key="canvasLocation" x="-126" y="-2"/>
         </collectionViewCell>
     </objects>
     <resources>

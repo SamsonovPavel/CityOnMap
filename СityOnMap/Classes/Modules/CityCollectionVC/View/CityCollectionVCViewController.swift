@@ -19,6 +19,11 @@ class CityCollectionVCViewController: UICollectionViewController {
 
     @IBOutlet weak var connectIndicator: UIImageView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        notification()
+    }
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +39,6 @@ class CityCollectionVCViewController: UICollectionViewController {
         
         self.navigationItem.title = "City"
         configurator.configureModuleForViewInput(viewInput: self)
-        notification()
         presenter.getData()
     }
     
@@ -147,6 +151,9 @@ extension CityCollectionVCViewController {
     
     func connectReachable() {
         connectIndicator.backgroundColor = .green
+        if dataArray == nil {
+            presenter.getData()
+        }
     }
     
     func connectNotReachable() {
