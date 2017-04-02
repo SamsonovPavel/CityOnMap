@@ -7,6 +7,8 @@
 //  Copyright © 2017 Pavel Samsonov. All rights reserved.
 //
 
+import UIKit
+
 class CityCollectionVCPresenter: CityCollectionVCModuleInput {
     weak var view: CityCollectionVCViewInput!
     var interactor: CityCollectionVCInteractorInput!
@@ -23,4 +25,26 @@ extension CityCollectionVCPresenter: CityCollectionVCInteractorOutput {
     func dataArray(cities: [City]?) {
         view.reloadCollectionVC(cities: cities)
     }
+    
+    func presentGoogleMapsVC(vc: UIViewController, longitude: Double?, latitude: Double?) {
+        router.presentViewController(vc: vc, longitude: longitude, latitude: latitude)
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

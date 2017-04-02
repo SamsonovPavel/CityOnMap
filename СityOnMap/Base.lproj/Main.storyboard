@@ -38,16 +38,41 @@
                             <outlet property="delegate" destination="YtI-ug-FhR" id="uQR-ly-nXp"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="ZvS-zG-L9H"/>
+                    <navigationItem key="navigationItem" id="ZvS-zG-L9H">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="QpD-L9-ysT">
+                            <view key="customView" contentMode="scaleToFill" id="Ubb-cs-cbg">
+                                <rect key="frame" x="286" y="5" width="73" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сеть" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3w-oA-JDm">
+                                        <rect key="frame" x="3" y="7" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6C-oe-GWI">
+                                        <rect key="frame" x="45" y="4" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="connectIndicator" destination="t6C-oe-GWI" id="Fx9-Rw-jEx"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOf-3I-qS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-482" y="-234"/>
+            <point key="canvasLocation" x="-756" y="-235.23238380809596"/>
         </scene>
-        <!--View Controller-->
+        <!--Google MapsVC-->
         <scene sceneID="S1M-OX-Tkk">
             <objects>
-                <viewController id="Nyt-sr-VLq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoogleMapsVCID" id="Nyt-sr-VLq" customClass="GoogleMapsVC" customModule="СityOnMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="alr-EA-keK"/>
                         <viewControllerLayoutGuide type="bottom" id="Xw7-AR-IZD"/>
@@ -55,12 +80,27 @@
                     <view key="view" contentMode="scaleToFill" id="dCW-bW-fgB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOY-7U-xRh" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="0.90852348019999996" blue="0.57243077379999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xw7-AR-IZD" firstAttribute="top" secondItem="XOY-7U-xRh" secondAttribute="bottom" id="LNW-Mh-1Zj"/>
+                            <constraint firstItem="XOY-7U-xRh" firstAttribute="top" secondItem="dCW-bW-fgB" secondAttribute="top" id="Vry-wW-fkq"/>
+                            <constraint firstItem="XOY-7U-xRh" firstAttribute="leading" secondItem="dCW-bW-fgB" secondAttribute="leading" id="Xjj-ov-jDU"/>
+                            <constraint firstAttribute="trailing" secondItem="XOY-7U-xRh" secondAttribute="trailing" id="YNT-P3-EBf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="XOY-7U-xRh" id="m96-Rj-ye8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOI-f4-Qyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="287" y="-234"/>
+            <point key="canvasLocation" x="-42.399999999999999" y="-234.33283358320841"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D5G-HJ-R67">
@@ -78,7 +118,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYJ-jx-OoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1257" y="-234"/>
+            <point key="canvasLocation" x="-1494" y="-235"/>
         </scene>
     </scenes>
 </document>

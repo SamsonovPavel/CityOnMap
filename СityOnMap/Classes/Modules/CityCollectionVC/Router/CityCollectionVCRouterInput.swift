@@ -7,7 +7,8 @@
 //  Copyright © 2017 Pavel Samsonov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol CityCollectionVCRouterInput {
+    func presentViewController(vc: UIViewController, longitude: Double?, latitude: Double?)
 }

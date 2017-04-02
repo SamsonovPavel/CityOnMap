@@ -7,6 +7,9 @@
 //  Copyright © 2017 Pavel Samsonov. All rights reserved.
 //
 
+import UIKit
+
 protocol CityCollectionVCViewOutput {
     func getData()
+    func presentGoogleMapsVC(vc: UIViewController, longitude: Double?, latitude: Double?)
 }

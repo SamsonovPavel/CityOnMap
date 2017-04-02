@@ -12,26 +12,38 @@ import UIKit
 private let cellReuseIdentifier = "Cell"
 
 class CityCollectionVCViewController: UICollectionViewController {
+    var activityIndicator = ActivityIndicatorVC()
     let configurator = CityCollectionVCModuleConfigurator()
     var presenter: CityCollectionVCViewOutput!
     var dataArray: [City]?
 
+    @IBOutlet weak var connectIndicator: UIImageView!
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicator.showActivityIndicator(view)
+        
+        connectIndicator.layer.borderColor   = UIColor.darkGray.cgColor
+        connectIndicator.layer.cornerRadius  = connectIndicator.bounds.width / 2.0
+        connectIndicator.layer.masksToBounds = true
         
         let nib = UINib(nibName: "CityCollectionCell", bundle: nil)
         self.collectionView?.register(nib, forCellWithReuseIdentifier: cellReuseIdentifier)
         
         self.navigationItem.title = "City"
-        
         configurator.configureModuleForViewInput(viewInput: self)
-        
+        notification()
         presenter.getData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }
 
@@ -69,7 +81,11 @@ extension CityCollectionVCViewController {
 // MARK: UICollectionViewDelegate
 extension CityCollectionVCViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if let data = dataArray {
+            presenter.presentGoogleMapsVC(vc: self,
+                                   longitude: data[indexPath.row].city_longitude,
+                                    latitude: data[indexPath.row].city_latitude)
+        }
     }
 }
 
@@ -107,6 +123,36 @@ extension CityCollectionVCViewController : UICollectionViewDelegateFlowLayout {
     }
 }
 
+extension CityCollectionVCViewController {
+    func notification() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(hideActivityIndicator),
+                                               name: listenerActivityIndicatorNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(connectReachable),
+                                               name: listenerNetworkReachableNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(connectNotReachable),
+                                               name: listenerNetworkNotReachableNotification,
+                                               object: nil)
+    }
+}
+
+extension CityCollectionVCViewController {
+    func hideActivityIndicator() {
+        activityIndicator.hideProgressView()
+    }
+    
+    func connectReachable() {
+        connectIndicator.backgroundColor = .green
+    }
+    
+    func connectNotReachable() {
+        connectIndicator.backgroundColor = .red
+    }
+}
 
 
 

@@ -16,8 +16,8 @@ struct City : Mappable {
     var city_domain:                       String?
     var city_mobile_server:                String?
     var city_doc_url:                      String?
-    var city_latitude:                     Float?
-    var city_longitude:                    Float?
+    var city_latitude:                     Double?
+    var city_longitude:                    Double?
     var city_spn_latitude:                 Float?
     var city_spn_longitude:                Float?
     var last_app_android_version:          Int?
@@ -34,18 +34,18 @@ struct City : Mappable {
     mutating func mapping(map: Map) {
         city_id                           <- map["city_id"]
         city_name                         <- map["city_name"]
-        city_api_url                      <- map["city_api_url "]
+        city_api_url                      <- map["city_api_url"]
         city_domain                       <- map["city_domain"]
         city_mobile_server                <- map["city_mobile_server"]
-        city_doc_url                      <- map["city_doc_url "]
+        city_doc_url                      <- map["city_doc_url"]
         city_latitude                     <- map["city_latitude"]
-        city_longitude                    <- map["city_longitude "]
-        city_spn_latitude                 <- map["city_spn_latitude "]
-        city_spn_longitude                <- map["city_spn_longitude "]
+        city_longitude                    <- map["city_longitude"]
+        city_spn_latitude                 <- map["city_spn_latitude"]
+        city_spn_longitude                <- map["city_spn_longitude"]
         last_app_android_version          <- map["last_app_android_version"]
         android_driver_apk_link           <- map["android_driver_apk_link"]
-        transfers                         <- map["transfers "]
-        client_email_required             <- map["client_email_required  "]
+        transfers                         <- map["transfers"]
+        client_email_required             <- map["client_email_required"]
         registration_promocode            <- map["registration_promocode"]
         experimental_econom_plus          <- map["experimental_econom_plus"]
         experimental_econom_plus_time     <- map["experimental_econom_plus_time"]

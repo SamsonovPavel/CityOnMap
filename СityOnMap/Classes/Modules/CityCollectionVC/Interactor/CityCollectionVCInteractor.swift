@@ -21,6 +21,7 @@ extension CityCollectionVCInteractor: CityCollectionVCInteractorInput {
             if let city = cities?.cities {
                 sself.data = city
                 sself.presenter.dataArray(cities: sself.data)
+                NotificationCenter.default.post(Notification(name: listenerActivityIndicatorNotification))
             }
         }) { (error) in
             
